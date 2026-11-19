@@ -1,0 +1,77 @@
+# Topics
+
+A topic is one **kind of video** this framework knows how to make. Each topic is a folder here with its own rules,
+its own references and its own kit. The engine in `src/engine/` is shared by all of them. The rules are not.
+
+| Topic | What it makes | Start with |
+|---|---|---|
+| [In This Town](InThisTown/README.md) | First-person town-rule story, no longer than three minutes | [Same Face and the reference index](InThisTown/reference/README.md) |
+| [Stories](Stories/README.md) | First-person story, any world; a cost, turn and visible payoff | `--topic stories` |
+| [What If](WhatIf/README.md) | A kid gets one impossible power | `--topic what-if` |
+| [Explainer](Explainer/README.md) | A factual question; fly to the exhibits without a cut | `--topic explainer` |
+| [Deadpan](Deadpan/README.md) | A mundane rule taken literally; fast escalation and an ironic button | `--topic deadpan` |
+| [Recreation](Recreation/README.md) | Real-life meme stories in a block town, not game mechanics | [Hus hus reference: approved MP4 and source](Recreation/Hus%20hus%20reference/README.md) · `--topic recreation` |
+
+[`Shared/`](Shared/README.md) holds common parts; it isn't a format. The selected `topic.json` is the
+machine contract (`state`/`provisional` if its numbers are provisional). For direction and delivery
+use [the rehearsal and review guide](../docs/DIRECTING.md).
+
+## Starting a film of a topic
+
+```bash
+npm run new -- "In This Town, Nobody Rang the Bell" --topic in-this-town
+npm run new -- "Why Bread Costs More" --topic explainer
+npm run new -- "What If You Could See Who Has a Crush on You" --topic what-if
+```
+
+The film is made from the topic's own starter, not from the 20-second template, and it says `topic: "<id>"` from its
+first commit. `npm run new` refuses a title that opens the way a topic opens ("In This Town …", "What If …") if
+`--topic` is missing, and `npm run check` fails a film whose title or first line opens that way and which does not
+declare a topic. A "What if" that is answered with facts is an explainer: pass `--topic explainer`. The reason is in
+[`InThisTown/reference/moon-20-seconds/`](InThisTown/reference/moon-20-seconds/README.md).
+
+## How the rules stack
+
+1. `AGENTS.md` and `docs/` are the base: the 20-second cinematic short.
+2. A film that says `topic: "<id>"` in `defineFilm` follows that topic's `README.md`. Where the topic's table of
+   changes disagrees with the base, **the topic wins, for that film only**.
+3. A film with no `topic` follows the base rules unchanged. Nothing in this folder applies to it.
+
+`npm run check` reads the same field: it lints a topic film against `Topics/<Folder>/topic.json` and every other film
+against the base contract.
+
+## What a topic folder holds
+
+| | |
+|---|---|
+| `README.md` | Start here. One page: what the format is, what changes from the base, the work order |
+| `topic.json` | The numbers the lint enforces: length, cut rate, voice pace, and the limits of the sound. `hardMinSeconds` and `hardMinWords` are the floor: under it a film is not a film of this topic. `cuts.<name>` holds other lengths of the same format; a film picks one with `cut: "<name>"`. `reference` names the topic's reference film, the finished film of ours that the owner chose to build like, and `models` lists every finished film. `film.opensWith` is the opening that belongs to the topic, and `film.opensWithHint` is a line the refusal adds (What If's points a factual "what if" to Explainer). `state` and `provisional` mark a topic built before its reference; `camera` names a scene builder other than `storyScene` |
+| Playbooks (`SCRIPT.md`, `SHOTS.md`, `SOUND.md`, …) | How to write it, how to shoot it, how it sounds |
+| `reference/<name>/` | The video or script the format came from, and the evidence taken from it: contact sheets, a shot log, the transcript. Once the owner approves a film of ours as the reference, its page is here too. **So is every other film of ours that the owner approved, each in a folder with its mp4, a snapshot of its source, a contact sheet and a log of every shot** (`node scripts/shot-log.mjs <film>`); the folder's own `README.md` lists them and says how to add one. Rejected attempts are kept here as well, one page each |
+| The pack (`index.ts` and the files it passes on, `PACK.md`) | People, places, things and helpers shared by that topic's films, taken from films the owner approved. Films themselves stay in `src/videos/` |
+| `template/` | The starter film `npm run new -- … --topic <id>` copies. It is left out of the type check, because its imports only resolve once it sits in `src/videos/`. Test it by scaffolding a film from it |
+| `sheet/` (Stories, What If) | The source of `pack.jpg`: a film that only shows the pack's parts, and `scripts/pack-sheet.py` to lay its stills out. The topic's `PACK.md` has the commands. Left out of the type check, like `template/` |
+
+A topic whose camera is not the story camera says so in `topic.json`, in a `camera` block. Explainer's is
+`{ "builder": "flightScene", "continuous": true, "guard": "unbroken", "maxHardCuts": 2 }`: `npm run check` then
+wants every scene built with that builder, `film.tsx` calling that guard, and no more declared cuts than that.
+
+## Adding a topic
+
+1. Start from a real reference the owner chose. Put it in `reference/<name>/` and measure it before writing any rule:
+   length, words, cuts, what is on screen. A rule with no number behind it is a guess.
+   **Only if the owner asks for the topic before its reference** (as he did for Stories and What If): build it as
+   PROVISIONAL. Borrow each number from the nearest measured topic and say where it came from, set
+   `"state": "PROVISIONAL"` with a `provisional` block in `topic.json`, say so at the top of the `README.md`, and
+   write a `reference/README.md` that lists what to measure when the reference arrives.
+2. Write the README's table of changes and `topic.json`.
+3. If the topic is narrated and cut to the voice, use the story-film pipeline in `docs/STORY-FILMS.md`
+   (script → voice → timing → shots → captions → sound). It is engine code and works for any topic.
+4. Add a lint profile only if the topic needs a check that the `story` profile does not have.
+5. What two topics both need goes into [`Shared/`](Shared/README.md), not into either topic.
+6. When the owner approves a film of the topic, move what the next film can reuse out of the film and into the
+   topic's pack, name the film in `models`, and make a `template/` from it. When the owner makes a film the
+   topic's reference, give it a page in `reference/` and name it in `reference`. When he asks for an approved film
+   to be kept as an example, put its source and its mp4 in `reference/<name>/`
+   ([`InThisTown/reference/README.md`](InThisTown/reference/README.md) has the commands). Prove with stills that the
+   approved film did not change (`scripts/compare-stills.py`).

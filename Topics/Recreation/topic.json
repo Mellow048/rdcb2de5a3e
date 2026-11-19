@@ -1,0 +1,118 @@
+{
+  "id": "recreation",
+  "name": "Recreation",
+  "folder": "Topics/Recreation",
+  "profile": "story",
+  "reference": {
+    "film": "thats-me-the-elbow",
+    "page": "Topics/Recreation/Hus hus reference",
+    "owner": "i like it the humor is top tier",
+    "use": "Study the deadpan narrator, the chant tied to visible actions and the payoff in the picture; do not reuse the family photo gag.",
+    "measured": {
+      "seconds": 77.5,
+      "words": 242,
+      "cues": 39,
+      "setups": 49,
+      "sfxPerMinute": 72.8,
+      "musicUnderVoiceDb": 18.3
+    }
+  },
+  "origin": {
+    "page": "Topics/Recreation/reference/OWNER-SCRIPT.md",
+    "what": "A format the owner found on a reel and wrote his own script for on 2026-11-18: the 'While they're out partying btw' and 'huss huss huss' memes told as a one-and-three-quarter-minute story. His corrections to our first draft are the rules of the topic.",
+    "owner": "its IRL coated with minecraft. No nether, no mc shenanigans. its a recreation cmon."
+  },
+  "premise": {
+    "oneLiner": "A real, everyday skill done far too seriously by a block-town character, told with the breathy HUS HUS HUS meme. The skill must change the story, not just decorate a montage.",
+    "mustHave": [
+      "The first two seconds show the real skill in action and its readable result, with the premise clear muted.",
+      "One identifiable ordinary skill is overtrained through visible, distinct attempts and failures.",
+      "Every on-screen performance of the HUS skill has the matching HUS breaths; the chant marks actual actions, not generic montage filler.",
+      "An original real-life problem and payoff; the practiced skill has a visible consequence.",
+      "The lead treats the disproportionate practice seriously; the comedy comes from the contrast and the images.",
+      "Keep spoken gaps at or under 1.9 seconds; use pictures and action to carry quieter beats."
+    ],
+    "never": [
+      "game mechanics, Nether, mobs, lava, crafting, or Minecraft jokes: the real world is recreated with block people and places.",
+      "reuse another film’s lines, gag, characters, or exact story; especially do not retell the family-photo / four-ears plot of the approved Elbow reference.",
+      "begin on a face, title card, or narration instead of the skill in action.",
+      "make the lead knowingly play the dedication as a joke."
+    ],
+    "formats": {
+      "approved-elbow": "The first approved HUS film starts with an awkward family photo, then turns practiced posing into a solution and an unrelated final-image joke. Its seven-scene storyboard is a model of action-to-chant and a visual payoff, not a plot template.",
+      "owner-origin": "The cook / party / job / reunion outline in origin.page is one format, not a mandatory plot. The barber is an unreviewed first build that supplies reusable production assets."
+    }
+  },
+  "camera": {
+    "builder": "storyScene",
+    "guard": "",
+    "maxHardCuts": 999,
+    "note": "Hard cuts. A script line with action under it is cut into several pictures with `cut:`."
+  },
+  "film": {
+    "seconds": [
+      75,
+      120
+    ],
+    "hardMaxSeconds": 140,
+    "hardMinSeconds": 60,
+    "hardMinWords": 120,
+    "shotSeconds": [
+      0.3,
+      12.0
+    ],
+    "medianShotSeconds": [
+      0.8,
+      4.0
+    ],
+    "wordsPerMinute": [
+      90,
+      200
+    ],
+    "words": [
+      150,
+      260
+    ],
+    "maxWordsPerShot": 12,
+    "captions": true,
+    "shortsRule": "Keep the vertical film well under 3:00. Working target and hard limits below are retained from the current Recreation contract; the approved 77.50 s Elbow film is a measured reference, not a duration quota."
+  },
+  "pack": "Topics/Recreation/README.md",
+  "template": "Topics/InThisTown/template",
+  "models": {
+    "thats-me-the-elbow": "The approved HUS reference: film, source, shot sheet and measured review in Topics/Recreation/Hus hus reference.",
+    "note": "The owner-approved Elbow film is the comedy, action/chant and visual-payoff reference; its story is not reusable. The barber is an unreviewed first build with reusable room and shop parts. The cook / parties outline is the owner’s originating example, not a mandatory plot."
+  },
+  "sound": {
+    "required": true,
+    "musicUnderVoiceDb": [
+      15,
+      24
+    ],
+    "maxBuried": 0,
+    "minVoiceOverRestDb": 3,
+    "minVoiceOverRestMedianDb": 10,
+    "lufs": [
+      -16.5,
+      -13
+    ],
+    "maxTruePeakDb": -0.3,
+    "guide": "Topics/Recreation/README.md",
+    "minMusicSections": 5,
+    "maxSecondsWithoutMusic": 8,
+    "minSfxPerMinute": 60,
+    "maxGapSeconds": 5,
+    "bedDefault": "room",
+    "moodDefault": "playful",
+    "bedForLook": {
+      "overworld-night": "night"
+    },
+    "bedForZone": {
+      "street": "village",
+      "yard": "village",
+      "room": "room",
+      "shop": "room"
+    },
+    "note": "Use an original score, not the In This Town track. The approved HUS mix is measured in reference.measured and in the archived source/sound.lock.json; the ranges here are working limits."
+  }
+}

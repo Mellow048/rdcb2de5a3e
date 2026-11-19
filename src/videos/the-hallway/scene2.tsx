@@ -1,0 +1,54 @@
+import { clamp01, defineScene, smoothstep, useTime } from "../../engine";
+import { Kid } from "./actors";
+
+/**
+ * BEAT 02 — THE DRAWING (0:03.4–0:06.8)
+ * The insert the hook promised. We push all the way into the crayon drawing:
+ * a house, a sun, and a tall black thing with two white eyes. Then the glance
+ * rips off it and lands on the open door. No cut — it is his eyes moving.
+ */
+export const scene2 = defineScene({
+  id: "scene2",
+  title: "The Drawing",
+  duration: 3.4,
+  shots: [
+    {
+      at: 0,
+      dur: 2.6,
+      from: [1.35, 1.68, 1.95],
+      to: [-1.15, 1.72, 0.55],
+      target: [-1.85, 1.55, -1.4],
+      targetTo: [-2.57, 1.72, -0.2],
+      fov: 48,
+      fovTo: 40,
+      ease: "inOutSine",
+      handheld: 0.003,
+      note: "Push into the crayon drawing until the black figure fills the frame. The audience should read the eyes before the boy does.",
+    },
+    {
+      at: 2.6,
+      dur: 0.8,
+      from: [-1.15, 1.72, 0.55],
+      to: [1.15, 1.55, 2.0],
+      target: [-2.57, 1.72, -0.2],
+      targetTo: [1.6, 1.5, 3.05],
+      fov: 40,
+      fovTo: 42,
+      ease: "inOutCubic",
+      note: "Whip off the drawing and land on the open door. The pan is his glance, and it tells the audience the drawing is not the danger.",
+    },
+  ],
+  Component: () => {
+    const t = useTime();
+    const away = smoothstep(clamp01((t - 2.55) / 0.6));
+    return (
+      <Kid
+        face={t > 2.7 ? "surprised" : "worried"}
+        animation="sit"
+        headYaw={-0.99 * (1 - away) + 0.37 * away}
+        headPitch={0.12 * (1 - away) + 0.02 * away}
+        headRoll={-0.05 * (1 - away)}
+      />
+    );
+  },
+});

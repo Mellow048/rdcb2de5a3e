@@ -1,0 +1,2181 @@
+{
+  "film": "the-barber-who-never-went-to-parties",
+  "README": "The sound sheet. Read Topics/Recreation/README.md first. Times are cues and words, never seconds. Then: python3 scripts/sound.py build the-barber-who-never-went-to-parties",
+  "music": {
+    "gain": -17,
+    "sections": [
+      {
+        "from": "1.hus",
+        "mood": "grind",
+        "gain": 1,
+        "why": "The hook is the payoff: the work music, already at full speed under the chant."
+      },
+      {
+        "from": "1.how",
+        "at": 1.42,
+        "mood": "none",
+        "why": "The rewind plays alone: the tape running back is the only sound."
+      },
+      {
+        "from": "2.paper",
+        "mood": "curious",
+        "why": "One year earlier: a kid, safety scissors, and a question."
+      },
+      {
+        "from": "2.party",
+        "mood": "party",
+        "gain": -1,
+        "why": "The house across the road, and the two who come from it."
+      },
+      {
+        "from": "2.weird",
+        "at": 1.38,
+        "mood": "none",
+        "why": "The door shuts and the party goes with it."
+      },
+      {
+        "from": "3.tv",
+        "mood": "wonder",
+        "why": "The barber on television: the thing I wanted."
+      },
+      {
+        "from": "3.wanted",
+        "at": 0.8,
+        "mood": "sneak",
+        "why": "The drawer, the scissors, Dad asleep: on tiptoe, and it stays on tiptoe under the first chant, which is the joke."
+      },
+      {
+        "from": "4.okay",
+        "mood": "playful",
+        "why": "It went wrong, and it is funny: Dad, the stripe, the hat."
+      },
+      {
+        "from": "4.hat",
+        "at": 1.7,
+        "mood": "sneak",
+        "gain": -1,
+        "why": "The garage at night, and a mop: the start, small."
+      },
+      {
+        "from": "5.hus",
+        "mood": "grind",
+        "why": "The training, and it does not let up through the montage."
+      },
+      {
+        "from": "5.fixable",
+        "at": 1.2,
+        "mood": "hope",
+        "why": "The calendar turns, spring comes, and Dad sits back down."
+      },
+      {
+        "from": "6.busiest",
+        "mood": "town",
+        "why": "The busiest shop in town, a sign, a Saturday, a queue."
+      },
+      {
+        "from": "6.beard",
+        "at": 1.95,
+        "mood": "none",
+        "why": "Two clicks of the scissors, alone."
+      },
+      {
+        "from": "6.hus",
+        "mood": "grind",
+        "gain": 1,
+        "why": "The year pays out: nine HUS, three heads."
+      },
+      {
+        "from": "6.forty",
+        "at": 1.85,
+        "mood": "none",
+        "why": "A quiet shop, before the door."
+      },
+      {
+        "from": "7.help",
+        "mood": "playful",
+        "why": "The two friends, in a panic about hair."
+      },
+      {
+        "from": "7.hus1",
+        "mood": "grind",
+        "gain": 1,
+        "why": "Six HUS: the hook, in order."
+      },
+      {
+        "from": "7.bro",
+        "at": 1.18,
+        "mood": "none",
+        "why": "The breath in, and one word with nothing under it: Training."
+      },
+      {
+        "from": "7.hus",
+        "mood": "grind",
+        "gain": 1,
+        "why": "The chant again, on the other friend."
+      },
+      {
+        "from": "7.coming",
+        "mood": "party",
+        "gain": -1,
+        "why": "They ask what they always asked."
+      },
+      {
+        "from": "7.no",
+        "mood": "none",
+        "why": "The party music stops on the word No, and nothing replaces it."
+      },
+      {
+        "from": "7.end",
+        "mood": "grind",
+        "gain": 1,
+        "why": "The work music back at full speed for the last chant, and held under the last picture."
+      }
+    ]
+  },
+  "beds": [
+    {
+      "from": "1.hus",
+      "to": "1.how",
+      "bed": "room"
+    },
+    {
+      "from": "2.paper",
+      "to": "2.paper",
+      "bed": "room"
+    },
+    {
+      "from": "2.party",
+      "to": "2.weird",
+      "bed": "night"
+    },
+    {
+      "from": "2.party",
+      "to": "2.whole",
+      "bed": "crowd",
+      "trim": -2
+    },
+    {
+      "from": "3.tv",
+      "to": "4.hat",
+      "bed": "room"
+    },
+    {
+      "from": "5.hus",
+      "to": "5.fixable",
+      "bed": "night"
+    },
+    {
+      "from": "5.while",
+      "to": "5.while",
+      "bed": "crowd"
+    },
+    {
+      "from": "5.spring",
+      "to": "5.spring",
+      "bed": "village"
+    },
+    {
+      "from": "5.sat",
+      "to": "5.dadhus",
+      "bed": "room"
+    },
+    {
+      "from": "6.busiest",
+      "to": "6.line",
+      "bed": "village"
+    },
+    {
+      "from": "6.line",
+      "to": "6.forty",
+      "bed": "crowd",
+      "trim": -3
+    },
+    {
+      "from": "6.beard",
+      "to": "6.forty",
+      "bed": "room"
+    },
+    {
+      "from": "7.help",
+      "to": "7.end",
+      "bed": "room"
+    }
+  ],
+  "sfx": [
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "1.hus",
+      "word": "HUS",
+      "nth": 4,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "1.hus",
+      "at": 1.02,
+      "dur": 0.3,
+      "trim": 2,
+      "sfx": "rustle",
+      "why": "The cape comes off"
+    },
+    {
+      "cue": "1.hus",
+      "at": 1.2,
+      "sfx": "sparkle",
+      "why": "The perfect haircut"
+    },
+    {
+      "cue": "1.hus",
+      "at": 1.3,
+      "trim": -2,
+      "sfx": "ding",
+      "why": "The result, readable with the eyes shut"
+    },
+    {
+      "cue": "1.how",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "Cut to his face"
+    },
+    {
+      "cue": "1.how",
+      "word": "HOW",
+      "trim": -3,
+      "sfx": "boing",
+      "why": "The question of the film"
+    },
+    {
+      "cue": "1.how",
+      "at": 1.08,
+      "trim": -2,
+      "sfx": "slide_up",
+      "why": "I breathe in to answer"
+    },
+    {
+      "cue": "1.how",
+      "at": 1.42,
+      "dur": 0.72,
+      "trim": 2,
+      "sfx": "rewind",
+      "why": "The tape runs back a year"
+    },
+    {
+      "cue": "2.paper",
+      "at": 0.0,
+      "trim": -4,
+      "sfx": "thud",
+      "why": "One year earlier lands"
+    },
+    {
+      "cue": "2.paper",
+      "at": 0.5,
+      "pitch": 1.5,
+      "repeat": 3,
+      "every": 0.33,
+      "trim": -1,
+      "sfx": "snip",
+      "why": "Safety scissors, slowly"
+    },
+    {
+      "cue": "2.paper",
+      "at": 1.6,
+      "trim": 3,
+      "sfx": "paper",
+      "why": "The paper tears instead"
+    },
+    {
+      "cue": "2.paper",
+      "at": 1.82,
+      "trim": 1,
+      "sfx": "slide_down",
+      "why": "The torn half falls"
+    },
+    {
+      "cue": "2.party",
+      "at": 0.0,
+      "sfx": "whoosh",
+      "why": "Across the road"
+    },
+    {
+      "cue": "2.party",
+      "at": 0.35,
+      "trim": -2,
+      "sfx": "cheer",
+      "why": "The party house"
+    },
+    {
+      "cue": "2.door",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "My door"
+    },
+    {
+      "cue": "2.door",
+      "word": "knocked",
+      "repeat": 3,
+      "every": 0.15,
+      "pitch": 1.0,
+      "trim": -1,
+      "sfx": "bonk",
+      "why": "They knock"
+    },
+    {
+      "cue": "2.door",
+      "at": 1.45,
+      "trim": 1,
+      "sfx": "creak",
+      "why": "I open it"
+    },
+    {
+      "cue": "2.friday",
+      "at": 0.0,
+      "sfx": "pop",
+      "why": "The loud friend"
+    },
+    {
+      "cue": "2.whole",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "He points over there"
+    },
+    {
+      "cue": "2.whole",
+      "at": 0.45,
+      "trim": -4,
+      "sfx": "cheer",
+      "why": "Over there"
+    },
+    {
+      "cue": "2.who",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "The big friend"
+    },
+    {
+      "cue": "2.who",
+      "word": "HOME",
+      "trim": 1,
+      "sfx": "blip",
+      "why": "HOME, as an insult"
+    },
+    {
+      "cue": "2.weird",
+      "word": "WEIRD",
+      "trim": -3,
+      "sfx": "drop",
+      "why": "The word that stays with me"
+    },
+    {
+      "cue": "2.weird",
+      "at": 1.02,
+      "dur": 0.33,
+      "trim": 2,
+      "sfx": "creak",
+      "why": "The door closes on them"
+    },
+    {
+      "cue": "2.weird",
+      "at": 1.38,
+      "trim": -4,
+      "sfx": "hit",
+      "why": "Shut"
+    },
+    {
+      "cue": "3.tv",
+      "at": 0.0,
+      "dur": 0.25,
+      "trim": -3,
+      "sfx": "glitch",
+      "why": "The television"
+    },
+    {
+      "cue": "3.tv",
+      "at": 0.55,
+      "pitch": 1.2,
+      "sfx": "blip",
+      "why": "The barber on the screen"
+    },
+    {
+      "cue": "3.cry",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "The man in the chair"
+    },
+    {
+      "cue": "3.cry",
+      "at": 0.4,
+      "trim": -2,
+      "sfx": "whoosh_low",
+      "why": "The cape flies off on the screen"
+    },
+    {
+      "cue": "3.cry",
+      "at": 0.8,
+      "sfx": "sparkle",
+      "why": "The haircut on television"
+    },
+    {
+      "cue": "3.cry",
+      "at": 1.4,
+      "repeat": 3,
+      "every": 0.26,
+      "trim": 2,
+      "sfx": "plink",
+      "why": "His tears"
+    },
+    {
+      "cue": "3.happy",
+      "at": 0.15,
+      "sfx": "chime",
+      "why": "Happy tears"
+    },
+    {
+      "cue": "3.wanted",
+      "word": "wanted",
+      "trim": -3,
+      "sfx": "ding",
+      "why": "The decision, on the word"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 0.84,
+      "dur": 0.3,
+      "trim": 3,
+      "sfx": "scrape",
+      "why": "The kitchen drawer"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 1.14,
+      "trim": -2,
+      "pitch": 1.3,
+      "sfx": "clank",
+      "why": "The only scissors in the house"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 1.42,
+      "sfx": "slide_up",
+      "why": "Held up like a sword"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 1.62,
+      "trim": 1,
+      "sfx": "sparkle",
+      "why": "A glint on them"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 1.92,
+      "sfx": "swish",
+      "why": "To the armchair"
+    },
+    {
+      "cue": "3.wanted",
+      "at": 2.08,
+      "repeat": 2,
+      "every": 0.22,
+      "trim": 3,
+      "sfx": "step_wood",
+      "why": "Up onto the crate behind Dad"
+    },
+    {
+      "cue": "3.hus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 3.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "3.hus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 3.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "3.hus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 3.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "3.hus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "3.hus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "3.hus",
+      "at": 0.72,
+      "trim": 1,
+      "sfx": "blink",
+      "why": "Dad's eyes open"
+    },
+    {
+      "cue": "3.hus",
+      "at": 0.8,
+      "trim": -4,
+      "sfx": "sting",
+      "why": "The stripe"
+    },
+    {
+      "cue": "4.okay",
+      "at": 0.9,
+      "trim": -1,
+      "sfx": "slide_down",
+      "why": "I see what I did"
+    },
+    {
+      "cue": "4.fixable",
+      "at": 0.0,
+      "sfx": "pop",
+      "why": "A brave face"
+    },
+    {
+      "cue": "4.fixable",
+      "word": "FIXABLE",
+      "pitch": 1.0,
+      "trim": -3,
+      "sfx": "ding",
+      "why": "The promise I will have to keep"
+    },
+    {
+      "cue": "4.fixable",
+      "at": 0.88,
+      "dur": 0.28,
+      "trim": 3,
+      "sfx": "rustle",
+      "why": "Dad's hand goes up to his head"
+    },
+    {
+      "cue": "4.fixable",
+      "at": 1.12,
+      "trim": -2,
+      "sfx": "bonk",
+      "why": "He finds the stripe"
+    },
+    {
+      "cue": "4.fixable",
+      "at": 1.36,
+      "dur": 0.35,
+      "trim": 3,
+      "sfx": "creak",
+      "why": "He turns round in the chair"
+    },
+    {
+      "cue": "4.fixable",
+      "at": 1.5,
+      "dur": 0.35,
+      "sfx": "slide_down",
+      "why": "I sink behind it"
+    },
+    {
+      "cue": "4.not",
+      "at": 0.0,
+      "trim": -2,
+      "sfx": "buzz",
+      "why": "It was not"
+    },
+    {
+      "cue": "4.hat",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "Dinner"
+    },
+    {
+      "cue": "4.hat",
+      "word": "hat",
+      "trim": -4,
+      "sfx": "boing",
+      "why": "The hat"
+    },
+    {
+      "cue": "4.hat",
+      "at": 1.08,
+      "sfx": "swish",
+      "why": "My end of the table"
+    },
+    {
+      "cue": "4.hat",
+      "at": 1.38,
+      "pitch": 0.8,
+      "trim": 1,
+      "sfx": "blip",
+      "why": "I look anywhere else"
+    },
+    {
+      "cue": "4.hat",
+      "at": 1.7,
+      "sfx": "whoosh",
+      "why": "The garage"
+    },
+    {
+      "cue": "4.hat",
+      "at": 2.0,
+      "pitch": 0.8,
+      "sfx": "pop",
+      "why": "A mop with a face on it"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.hus",
+      "word": "HUS",
+      "nth": 4,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.hus",
+      "at": 1.06,
+      "dur": 0.3,
+      "trim": 1,
+      "sfx": "slide_down",
+      "why": "A mop with four strings left"
+    },
+    {
+      "cue": "5.hus",
+      "at": 1.5,
+      "trim": -1,
+      "sfx": "stamp",
+      "why": "The meme's line, in blocks"
+    },
+    {
+      "cue": "5.hus",
+      "at": 1.7,
+      "trim": -1,
+      "sfx": "cheer",
+      "why": "The party, far off, through the window"
+    },
+    {
+      "cue": "5.while",
+      "at": 0.0,
+      "sfx": "whoosh",
+      "why": "The lawn across the road"
+    },
+    {
+      "cue": "5.while",
+      "at": 0.42,
+      "repeat": 2,
+      "every": 0.45,
+      "trim": -3,
+      "sfx": "boing",
+      "why": "They dance"
+    },
+    {
+      "cue": "5.cutting",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "The other half of the same night"
+    },
+    {
+      "cue": "5.cutting",
+      "at": 0.15,
+      "repeat": 4,
+      "every": 0.19,
+      "pitchStep": 1.03,
+      "trim": 1,
+      "sfx": "snip",
+      "why": "I was cutting"
+    },
+    {
+      "cue": "5.mops",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "The pile"
+    },
+    {
+      "cue": "5.mops",
+      "at": 0.2,
+      "repeat": 5,
+      "every": 0.2,
+      "pitchStep": 1.08,
+      "trim": 4,
+      "sfx": "tick",
+      "why": "Mops, counted"
+    },
+    {
+      "cue": "5.combs",
+      "at": 0.3,
+      "trim": -1,
+      "sfx": "crack",
+      "why": "A comb snaps"
+    },
+    {
+      "cue": "5.combs",
+      "at": 0.5,
+      "trim": 3,
+      "sfx": "debris",
+      "why": "On the pile of the others"
+    },
+    {
+      "cue": "5.dog",
+      "at": 0.4,
+      "pitch": 0.7,
+      "trim": 1,
+      "sfx": "blip",
+      "why": "The dog looks round"
+    },
+    {
+      "cue": "5.dog",
+      "at": 1.2,
+      "dur": 0.45,
+      "trim": 1,
+      "sfx": "slide_up",
+      "why": "The scissors rise behind him: here it comes"
+    },
+    {
+      "cue": "5.m1",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m1",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m1",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m1",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m1",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m1",
+      "at": 0.5,
+      "pitch": 1.6,
+      "trim": 2,
+      "sfx": "blip",
+      "why": "The dog: one small yelp of a note"
+    },
+    {
+      "cue": "5.m2",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m2",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m2",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m2",
+      "at": 0.1,
+      "dur": 0.4,
+      "trim": 4,
+      "sfx": "rustle",
+      "why": "The hedge: leaves"
+    },
+    {
+      "cue": "5.m3",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m3",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m3",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m3",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m3",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m3",
+      "at": 0.47,
+      "pitch": 1.3,
+      "trim": -1,
+      "sfx": "bonk",
+      "why": "The dummy: a hollow head"
+    },
+    {
+      "cue": "5.m4",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m4",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m4",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m4",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m4",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m4",
+      "at": 0.47,
+      "trim": -3,
+      "sfx": "splash",
+      "why": "The mop: bald, and its bucket"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.118,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 1.007,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.109,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.239,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 1.116,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m5",
+      "word": "HUS",
+      "nth": 3,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.m5",
+      "at": 0.0,
+      "dur": 0.85,
+      "trim": -2,
+      "sfx": "riser",
+      "why": "Six, faster: the year going by"
+    },
+    {
+      "cue": "5.m5",
+      "at": 0.74,
+      "trim": 0,
+      "sfx": "sparkle",
+      "why": "The first good head"
+    },
+    {
+      "cue": "5.m6",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.m6",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.m6",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.m6",
+      "at": 0.62,
+      "trim": -6,
+      "sfx": "buzz",
+      "why": "My own fringe: far too short"
+    },
+    {
+      "cue": "5.m6",
+      "at": 0.78,
+      "dur": 0.35,
+      "trim": -1,
+      "sfx": "slide_down",
+      "why": "My face falls"
+    },
+    {
+      "cue": "5.fixable",
+      "word": "FIXABLE",
+      "trim": -3,
+      "sfx": "ding",
+      "why": "The same promise, to myself"
+    },
+    {
+      "cue": "5.fixable",
+      "at": 0.8,
+      "pitch": 0.8,
+      "sfx": "pop",
+      "why": "A cap goes on it"
+    },
+    {
+      "cue": "5.fixable",
+      "at": 1.22,
+      "repeat": 5,
+      "every": 0.09,
+      "trim": 4,
+      "sfx": "paper",
+      "why": "The calendar: five pages"
+    },
+    {
+      "cue": "5.spring",
+      "at": 0.15,
+      "dur": 0.75,
+      "trim": 2,
+      "sfx": "gust",
+      "why": "Spring, and blossom"
+    },
+    {
+      "cue": "5.sat",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "The living room"
+    },
+    {
+      "cue": "5.sat",
+      "at": 0.28,
+      "dur": 0.3,
+      "trim": 4,
+      "sfx": "rustle",
+      "why": "The hat comes off"
+    },
+    {
+      "cue": "5.sat",
+      "at": 0.6,
+      "dur": 0.35,
+      "trim": 2,
+      "sfx": "creak",
+      "why": "He sits down in the chair"
+    },
+    {
+      "cue": "5.sat",
+      "at": 1.3,
+      "dur": 0.5,
+      "sfx": "slide_up",
+      "why": "The scissors go up over him"
+    },
+    {
+      "cue": "5.dadhus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 3.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "5.dadhus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 3.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "5.dadhus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 3.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "5.dadhus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.dadhus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "5.dadhus",
+      "at": 0.56,
+      "trim": 2,
+      "sfx": "sparkle",
+      "why": "This time it is right"
+    },
+    {
+      "cue": "5.dadhus",
+      "at": 0.7,
+      "trim": 1,
+      "sfx": "chime",
+      "why": "Dad smiles: the hat is paid off"
+    },
+    {
+      "cue": "6.busiest",
+      "at": 0.0,
+      "sfx": "whoosh",
+      "why": "The high street"
+    },
+    {
+      "cue": "6.busiest",
+      "at": 0.45,
+      "pitch": 1.0,
+      "trim": -1,
+      "sfx": "ding",
+      "why": "A shop bell"
+    },
+    {
+      "cue": "6.busiest",
+      "at": 0.55,
+      "repeat": 4,
+      "every": 0.22,
+      "trim": 3,
+      "sfx": "step_stone",
+      "why": "People going in"
+    },
+    {
+      "cue": "6.sign",
+      "at": 0.12,
+      "trim": -1,
+      "sfx": "stamp",
+      "why": "HELP WANTED"
+    },
+    {
+      "cue": "6.sign",
+      "at": 1.05,
+      "pitch": 1.3,
+      "trim": 1,
+      "sfx": "blip",
+      "why": "I read it"
+    },
+    {
+      "cue": "6.saturday",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "Saturday"
+    },
+    {
+      "cue": "6.saturday",
+      "at": 0.4,
+      "repeat": 3,
+      "every": 0.16,
+      "pitch": 1.4,
+      "trim": -3,
+      "sfx": "bonk",
+      "why": "My first morning"
+    },
+    {
+      "cue": "6.line",
+      "at": 0.0,
+      "sfx": "whoosh",
+      "why": "Along the queue"
+    },
+    {
+      "cue": "6.line",
+      "at": 0.25,
+      "repeat": 5,
+      "every": 0.19,
+      "trim": 3,
+      "sfx": "step_stone",
+      "why": "It shuffles"
+    },
+    {
+      "cue": "6.beard",
+      "word": "beard",
+      "dur": 0.6,
+      "trim": 1,
+      "sfx": "slide_down",
+      "why": "A beard to his belt"
+    },
+    {
+      "cue": "6.beard",
+      "at": 1.3,
+      "sfx": "swish",
+      "why": "Inside"
+    },
+    {
+      "cue": "6.beard",
+      "at": 1.34,
+      "dur": 0.6,
+      "trim": 2,
+      "sfx": "clippers",
+      "why": "Three barbers, losing"
+    },
+    {
+      "cue": "6.beard",
+      "at": 2.1,
+      "trim": 5,
+      "pitch": 0.9,
+      "sfx": "snip",
+      "why": "Two clicks of my scissors, alone"
+    },
+    {
+      "cue": "6.beard",
+      "at": 2.33,
+      "trim": 5,
+      "pitch": 0.9,
+      "sfx": "snip",
+      "why": "The second click"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 6,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 7)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 7,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 8)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 8,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 9)"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 3,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 6,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.1,
+      "pitch": 1.0,
+      "trim": -1,
+      "sfx": "pop",
+      "why": "A head done, and the next one sits down"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 5,
+      "at": 0.1,
+      "pitch": 1.12,
+      "trim": -1,
+      "sfx": "pop",
+      "why": "The second head done"
+    },
+    {
+      "cue": "6.hus",
+      "word": "HUS",
+      "nth": 8,
+      "at": 0.1,
+      "pitch": 1.26,
+      "trim": -1,
+      "sfx": "pop",
+      "why": "The third head done"
+    },
+    {
+      "cue": "6.hus",
+      "at": 1.56,
+      "trim": 3,
+      "sfx": "debris",
+      "why": "The owner, shin deep in hair"
+    },
+    {
+      "cue": "6.hus",
+      "at": 1.9,
+      "trim": -1,
+      "sfx": "blink",
+      "why": "He stares"
+    },
+    {
+      "cue": "6.forty",
+      "at": 0.1,
+      "repeat": 4,
+      "every": 0.25,
+      "trim": 2,
+      "sfx": "step_wood",
+      "why": "Finished heads walking out"
+    },
+    {
+      "cue": "6.forty",
+      "at": 0.15,
+      "dur": 0.9,
+      "trim": 2,
+      "sfx": "count",
+      "why": "The counter runs up"
+    },
+    {
+      "cue": "6.forty",
+      "word": "forty",
+      "at": 0.5,
+      "trim": -3,
+      "sfx": "register",
+      "why": "Forty"
+    },
+    {
+      "cue": "6.forty",
+      "at": 1.27,
+      "dur": 0.36,
+      "trim": 1,
+      "sfx": "slide_down",
+      "why": "The comb slips out of the owner's hand"
+    },
+    {
+      "cue": "6.forty",
+      "at": 1.63,
+      "trim": 1,
+      "sfx": "crack",
+      "why": "It lands"
+    },
+    {
+      "cue": "6.forty",
+      "at": 2.08,
+      "trim": -1,
+      "sfx": "hit",
+      "why": "The door bangs open"
+    },
+    {
+      "cue": "7.help",
+      "at": 0.08,
+      "repeat": 4,
+      "every": 0.12,
+      "trim": 2,
+      "sfx": "step_wood",
+      "why": "They fall in"
+    },
+    {
+      "cue": "7.look",
+      "at": 0.0,
+      "sfx": "whoosh",
+      "why": "The hand comes off his head"
+    },
+    {
+      "cue": "7.look",
+      "at": 0.08,
+      "trim": -1,
+      "sfx": "boing",
+      "why": "The hair of frame one"
+    },
+    {
+      "cue": "7.please",
+      "at": 0.0,
+      "sfx": "pop",
+      "why": "He begs"
+    },
+    {
+      "cue": "7.please",
+      "word": "FIXABLE",
+      "trim": -3,
+      "sfx": "ding",
+      "why": "My own word, said back to me"
+    },
+    {
+      "cue": "7.please",
+      "at": 1.2,
+      "sfx": "swish",
+      "why": "I turn round"
+    },
+    {
+      "cue": "7.please",
+      "at": 1.5,
+      "pitch": 0.8,
+      "trim": 1,
+      "sfx": "blip",
+      "why": "I know them"
+    },
+    {
+      "cue": "7.wait",
+      "at": 0.0,
+      "trim": 4,
+      "sfx": "tick",
+      "why": "He knows me"
+    },
+    {
+      "cue": "7.weirdone",
+      "word": "WEIRD",
+      "trim": -6,
+      "sfx": "sting",
+      "why": "The name they gave me"
+    },
+    {
+      "cue": "7.weirdone",
+      "at": 0.74,
+      "repeat": 2,
+      "every": 0.22,
+      "trim": 0,
+      "sfx": "thud",
+      "why": "I pat the chair, twice"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.08,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 0.94,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus1",
+      "word": "HUS",
+      "nth": 4,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus1",
+      "at": 1.14,
+      "dur": 0.28,
+      "trim": 3,
+      "sfx": "rustle",
+      "why": "The cape comes off"
+    },
+    {
+      "cue": "7.hus1",
+      "at": 1.3,
+      "trim": 1,
+      "sfx": "sparkle",
+      "why": "The haircut of frame one"
+    },
+    {
+      "cue": "7.hus1",
+      "at": 1.42,
+      "trim": -2,
+      "sfx": "ding",
+      "why": "Done"
+    },
+    {
+      "cue": "7.bro",
+      "at": 0.0,
+      "sfx": "swish",
+      "why": "His face in the mirror"
+    },
+    {
+      "cue": "7.bro",
+      "word": "HOW",
+      "trim": -3,
+      "sfx": "boing",
+      "why": "The question again"
+    },
+    {
+      "cue": "7.bro",
+      "at": 1.22,
+      "trim": -2,
+      "sfx": "slide_up",
+      "why": "The same breath in"
+    },
+    {
+      "cue": "7.training",
+      "at": 0.62,
+      "trim": 2,
+      "sfx": "tick",
+      "why": "Nothing. A clock"
+    },
+    {
+      "cue": "7.training",
+      "at": 0.92,
+      "trim": -2,
+      "sfx": "blink",
+      "why": "Two blank faces"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.0,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.08,
+      "trim": 1.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 0.94,
+      "trim": 1.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus",
+      "word": "HUS",
+      "nth": 4,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.hus",
+      "at": 1.02,
+      "dur": 0.3,
+      "trim": 2,
+      "sfx": "rustle",
+      "why": "The second cape"
+    },
+    {
+      "cue": "7.hus",
+      "at": 1.2,
+      "trim": 3,
+      "sfx": "sparkle",
+      "why": "Both of them ready"
+    },
+    {
+      "cue": "7.hus",
+      "at": 1.32,
+      "trim": -1,
+      "sfx": "chime",
+      "why": "For the party"
+    },
+    {
+      "cue": "7.coming",
+      "at": 0.0,
+      "repeat": 2,
+      "every": 0.13,
+      "pitchStep": 1.2,
+      "sfx": "pop",
+      "why": "At the door, waving"
+    },
+    {
+      "cue": "7.coming",
+      "at": 0.3,
+      "trim": -4,
+      "sfx": "cheer",
+      "why": "The party, calling"
+    },
+    {
+      "cue": "7.no",
+      "at": 0.34,
+      "trim": -2,
+      "sfx": "drop",
+      "why": "No. One low note, and nothing else"
+    },
+    {
+      "cue": "7.no",
+      "at": 0.62,
+      "trim": 1,
+      "sfx": "blink",
+      "why": "Two blank faces at the door"
+    },
+    {
+      "cue": "7.no",
+      "at": 1.08,
+      "sfx": "swish",
+      "why": "The chair"
+    },
+    {
+      "cue": "7.no",
+      "at": 1.16,
+      "dur": 0.45,
+      "trim": 1,
+      "sfx": "slide_up",
+      "why": "The scissors go up over the mop"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 0,
+      "pitch": 1.0,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 1)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 1,
+      "pitch": 1.112,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 2)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 2,
+      "pitch": 0.997,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 3)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 3,
+      "pitch": 1.093,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 4)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 4,
+      "pitch": 1.216,
+      "trim": 2.0,
+      "pan": 0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 5)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 5,
+      "pitch": 1.09,
+      "trim": 2.0,
+      "pan": -0.25,
+      "sfx": "snip",
+      "why": "One snip under every HUS: the chant is the scissors (snip 6)"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 0,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 2,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.end",
+      "word": "HUS",
+      "nth": 4,
+      "at": 0.07,
+      "trim": 2,
+      "sfx": "hair",
+      "why": "Hair leaving a head, just after the snip"
+    },
+    {
+      "cue": "7.end",
+      "at": 1.1,
+      "trim": 2,
+      "sfx": "sparkle",
+      "why": "The mop, done"
+    },
+    {
+      "cue": "7.end",
+      "at": 1.32,
+      "trim": -1,
+      "sfx": "stamp",
+      "why": "The meme's line lands on the last picture"
+    },
+    {
+      "cue": "7.end",
+      "at": 1.72,
+      "trim": 4,
+      "pitch": 0.9,
+      "sfx": "snip",
+      "why": "Two clicks of the scissors to finish: an ending, not a cut"
+    },
+    {
+      "cue": "7.end",
+      "at": 1.94,
+      "trim": 4,
+      "pitch": 0.9,
+      "sfx": "snip",
+      "why": "The second click"
+    },
+    {
+      "cue": "7.end",
+      "at": 2.06,
+      "trim": -2,
+      "sfx": "ding",
+      "why": "The last note"
+    }
+  ]
+}
